@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -307,6 +308,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background:  #FF9000;
   color: #fff;
   border-radius: 10px;
+  height: auto;
 }
 .skills h4{
   color: #fff;
@@ -651,8 +653,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .progress-wrap {
   width: 100%;
+  z-index: 99999;
   float: left;
   margin-bottom: 30px;
+  background-color: #fff;
 }
 .progress-wrap h3 {
   font-size: 16px;
@@ -668,13 +672,40 @@ h1, h2, h3, h4, h5, h6, figure {
   float: right;
 }
 
+
 .progress {
   width: 100%;
   float: left;
   height: 5px;
   box-shadow: none;
 }
+.r-4
+{
+  width: 40%;
+  float: left;
+  padding: 10px;
+}
+.r-8{
+  width: 60%;
+  float: right;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .r-4, .r-8 {
+    width: 100%; 
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work {
+    height: 270px;
+  }
+}
 .progress-bar {
   background-color: #2F3C4F;
   height: 5px;
